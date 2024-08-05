@@ -1,0 +1,73 @@
+/* Styling for the form container */
+.form-container {
+    width: 400px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the form header */
+.form-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling for form labels */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Styling for the form inputs */
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+/* Styling for the register button */
+.register-btn {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling for the register button on hover */
+.register-btn:hover {
+    
+    box-shadow: inset 20vw 0 #676778;  /*to get full part upto button width */
+    transition: ease-out 1.0s;
+}
+
+/* Styling for the success/error message */
+.message {
+    font-size: 1em;
+    color: green;
+    display: none;
+    margin-top: 10px;
+}
+
+.message.error {
+    color: red;
+}

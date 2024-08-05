@@ -1,0 +1,289 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        /* Styling for the form container */
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            margin: 50px auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the form header */
+        .form-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for form labels */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        /* Styling for the form inputs */
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 200px;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        /* Styling for the login button */
+        .login-btn {
+            padding: 10px 20px;
+            margin: 20px 0;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Styling for the login button on hover */
+        .login-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Styling for links */
+        .form-footer {
+            font-size: 0.9em;
+        }
+
+        .form-footer a {
+            text-decoration: none;
+            color: black;
+            margin: 0 5px;
+        }
+
+        /* Styling for links on hover */
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <a href="#">Login here</a>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" minlength="4" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{1,}" required>
+            </div>
+            <button type="submit" class="login-btn">Log in</button>
+        </form>
+        <div class="form-footer">
+            <a href="#">Register</a> | 
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+</body>
+</html>
+ <script>
+    const loginForm = document.getElementById('loginForm');
+    const errorMessage = document.getElementById('errorMessage');
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        if (validateForm(username, password)) {
+            alert('Login successful!');
+            // Perform login actions here (e.g., AJAX request)
+        } else {
+            errorMessage.style.display = 'block';
+        }
+    });
+
+    function validateForm(username, password) {
+        const usernameValid = username.length >= 4;
+        const passwordValid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$/.test(password);
+        return usernameValid && passwordValid;
+    }
+
+    function showPasswordInfo() {
+        alert("Password rules:\n- At least 8 characters\n- At least one uppercase letter\n- At least one lowercase letter\n- At least one number\n- At least one special character");
+    }
+</script>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Login Page</title>
+    <style>
+        /* Styling for the form container */
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            margin: 50px auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        /* Styling for the form header */
+        .form-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Styling for form labels */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        /* Styling for the form inputs */
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 200px;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        /* Styling for the login button */
+        .login-btn {
+            padding: 10px 20px;
+            margin: 20px 0;
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Styling for the login button on hover */
+        .login-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Styling for links */
+        .form-footer {
+            font-size: 0.9em;
+        }
+
+        .form-footer a {
+            text-decoration: none;
+            color: black;
+            margin: 0 5px;
+        }
+
+        /* Styling for links on hover */
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Error message styling */
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <a href="#">Login here</a>
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" minlength="4" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" 
+                    title="Password must be at least 8 characters long, with at least one uppercase letter, one lowercase letter, one number, and one special character."
+                    required>
+                <button type="button" class="info-btn" onclick="showPasswordInfo()">Info</button>
+            </div>
+            <button type="submit" class="login-btn">Log in</button>
+            <div class="error-message" id="errorMessage">Please correct the errors above.</div>
+        </form>
+        <div class="form-footer">
+            <a href="#">Register</a> | 
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('loginForm');
+        const errorMessage = document.getElementById('errorMessage');
+
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (validateForm(username, password)) {
+                alert('Login successful!');
+                // Perform login actions here (e.g., AJAX request)
+            } else {
+                errorMessage.style.display = 'block';
+            }
+        });
+
+        function validateForm(username, password) {
+            const usernameValid = username.length >= 4;
+            const passwordValid = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$/.test(password);
+            return usernameValid && passwordValid;
+        }
+
+        function showPasswordInfo() {
+            alert("Password rules:\n- At least 8 characters\n- At least one uppercase letter\n- At least one lowercase letter\n- At least one number\n- At least one special character");
+        }
+    </script>
+
+</body>
+</html>

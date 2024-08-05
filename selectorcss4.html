@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: burlywood;
+            margin: 8vh 0 0 5vw ;
+        }
+        body p{
+            font-size: 1.3rem;
+
+        }
+        ul li{
+            font-size: 1.3rem;
+        }
+        .box1{
+            background-color: rgb(238, 210, 174);
+            width: 45%;
+            position: relative;
+        }
+        .box2{
+            background-color: rgb(231, 160, 67);
+            width: 45%;
+            position:absolute;
+            left: 47.5vw;
+            top: 53vh;
+        }
+        .box3{
+            background-color: rgb(230, 177, 108);
+            width: 45%;
+            position: relative;
+           
+        }
+        .box4{
+            background-color: rgb(238, 210, 174);
+            width: 45%;
+            position: absolute;
+            top: 89vh;
+            left: 47.5vw;
+            
+        }
+        .box5{
+            background-color: rgb(231, 160, 67);
+            width: 45%;
+            position: relative;
+           
+        }
+        .btn{
+            height: 5vh;
+            width: 100%;
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        button{
+            background-color: rgb(231, 173, 98);
+            width: 8vw;
+            height: 5vh;
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            color: black;
+        }
+        body a{
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1><u>CSS Selectors</u></h1><br>
+    <p>A CSS selector selects the HTML element(s) you want to style.</p><br>
+    <h2>CSS Selectors</h2>
+    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p><br>
+    <ul>
+        <h3>We can divide CSS selectors into five categories:</h3>
+        <li>Simple selectors (select elements based on name, id, class)</li>
+        <li>Combinator selectors (select elements based on a specific relationship between them)</li>
+        <li>Pseudo-class selectors (select elements based on a certain state)</li>
+        <li>Pseudo-elements selectors (select and style a part of an element)</li>
+        <li>Attribute selectors (select elements based on an attribute or attribute value)</li><br>
+    </ul>
+    <div class="box1">
+    <h2>The CSS element Selector</h2>
+        <p> Example</p>
+        <p>Here, all &ltp&gt elements on the page will be center-aligned, with a red text color: </p>
+        <p>p {</p>
+        <p> text-align: center;</p>
+        <p>color: red; } </p><br>
+    </div>
+    <div class="box2">
+        <h2>The CSS id Selector</h2>
+        <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+        <p>select an element with a specific id, write a hash (#) character, followed by the id of the element.</p>
+       <p> Example</p>
+        <p>The CSS rule below will be applied to the HTML element with id="para1": </p>
+          <p>#para1 {</p>
+        <p> text-align: center;</p>
+        <p>color: red; }</p><br>
+    </div>
+    <div class="box3">
+        <h2>The CSS class Selector</h2>
+        <p>select elements with a specific class, write a period (.) character, followed by the class name.</p>
+        <p>Example</p>
+         <p>In this example all HTML elements with class="center" will be red and center-aligned: </p>
+         <p>.center {</p>
+            <p> text-align: center;</p>
+            <p>color: red; } </p><br>
+    </div>
+    <div class="box4">
+        <h2>The CSS Universal Selector</h2>
+        <p>The universal selector (*) selects all HTML elements on the page.</p>
+        <p>Example</p>
+        <p>The CSS rule below will affect every HTML element on the page: </p>
+        <p>* {</p>
+        <p>text-align: center;</p>
+        <p>color: blue; } </p><br>
+    </div>
+    <div class="box5">
+        <h2>The CSS Grouping Selector</h2>
+       <p>It will be better to group the selectors, to minimize the code.</p>
+       <p> To group selectors, separate each selector with a comma.</p>
+       <p>Example</p>
+        <p>In this example we have grouped the selectors from the code above: </p>
+        <p>h1, h2, p {</p>
+        <p>text-align: center;</p>
+        <p> color: red; }</p><br>
+    </div>
+    <br><div class="btn">
+        <button ><a href="css(Syntax)2.html">Previous</a></button>
+        <button ><a href="typesofcss.html">Next</a></button>
+      </div>
+
+</body>
+</html>

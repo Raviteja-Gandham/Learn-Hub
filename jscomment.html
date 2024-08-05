@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 5vh 0 0 8vw;
+            width: 80%;
+        }
+         body p{
+            font-size: 1.5em;
+         }
+         body h2{
+            background-color: rgb(157, 239, 157);
+         }
+        .p{
+            font-size: 1.5em; 
+        }
+        .btn{
+            height: 5vh;
+            width: 100%;
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        button{
+            background-color:rgb(160, 230, 160) ;
+            width: 8vw;
+            height: 5vh;
+            padding: 5px;
+            font-size: 1em;
+            border-radius: 10px;
+            color: black;
+        }
+        body a{
+            text-decoration: none;
+        }
+        </style>
+</head>
+<body>
+    <h1  style="background-color: rgb(89, 209, 89);"><u>JavaScript Comments</u></h1>
+    <p>Code after double slashes // or between /* and */ is treated as a comment.</p>
+    <p>Comments are ignored, and will not be executed:</p>
+    <pre class="p">
+        <code>
+let x = 5;   // I will be executed
+
+// x = 6;   I will NOT be executed
+        </code>
+    </pre><br>
+    <h2>JavaScript Identifiers / Names</h2>
+   <p> Identifiers are JavaScript names.</p> 
+   <p>Identifiers are used to name variables and keywords, and functions.</p>
+     <p>The rules for legal names are the same in most programming languages.</p><br>
+
+   <h2>A JavaScript name must begin with:</h2>
+   <ul class="p">
+<li>A letter (A-Z or a-z)</li>
+<li>A dollar sign ($)</li>
+<li>Or an underscore (_)</li>
+</ul><br>
+   <h2>JavaScript is Case Sensitive</h2>
+   <p>All JavaScript identifiers are <b><u>case sensitive</u></b>. </p>
+   <p>The variables lastName and lastname, are two different variables:</p>
+    <pre class="p">
+        <ode>
+            let lastname, lastName;
+            lastName = "Doe";
+            lastname = "Peterson";
+        </code>
+    </pre><br>
+    <h2>JavaScript and Camel Case</h2>
+    <p>Historically, programmers have used different ways of joining multiple words into one variable name:</p>
+    <p><b>Hyphens:</b></p>
+    <p>first-name, last-name, master-card, inter-city.</p>
+    <p><b style="background-color: rgb(234, 150, 150);">Note: -Hyphens are not allowed in JavaScript. They are reserved for subtractions.</b></p>
+    <p><b>Underscore:</b></p>
+    <p>first_name, last_name, master_card, inter_city.</p>
+    <p><b>Upper Camel Case (Pascal Case):</b></p>
+    <p>FirstName, LastName, MasterCard, InterCity.</p>
+    <p><b>Lower Camel Case:</b></p>
+    <p>JavaScript programmers tend to use camel case that starts with a lowercase letter:</p>
+    <p>firstName, lastName, masterCard, interCity.</p>
+
+    <br><div class="btn">
+        <button ><a href="js1.html">Previous</a></button>
+        <button ><a href="jsvariable3.html">Next</a></button>
+      </div>
+
+</body>
+</html>

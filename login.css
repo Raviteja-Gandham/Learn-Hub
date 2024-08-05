@@ -1,0 +1,108 @@
+       body, html{
+        margin: 0;
+        display: flex;
+        height: 90%;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(to right, darkgreen 50%, darkblue 50%); /*To add two colors to the background 50%,50%*/
+       }    
+
+       /* Styling for the form container */
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            margin: 50px auto;
+            border: 2px solid black;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            font-family: Arial, sans-serif;
+           /* background-image: url("Learnboy.png");*/
+            background-color: white;
+          
+             /*   float: left;  /* To display content left of the page */
+        }
+        .img-logo{
+            border: 2px solid black;
+            height: 75px;
+            width: 75px;
+        }
+       
+        /* Styling for the form header */
+        .form-header {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+           
+        }
+
+        /* Styling for form labels */
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        /* Styling for the form inputs */
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 200px;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        /* Styling for the login button */
+        .login-btn {
+            padding: 10px 20px;
+            margin: 20px 0;
+            width: 15vw; /* button width */
+            border: 2px solid black;
+            background-color: white;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: inset;
+            transition: ease-out 0.5s;
+        }
+
+        /* Styling for the login button on hover */
+        .login-btn:hover {
+            background-color: #321919;
+            color: white;
+            background-color: rosybrown;
+            box-shadow: inset 20vw 0 #676778;  /*to get full part upto button width */
+            /* box-shadow: inset 5vw 0 #676778; /* to get off part (or) 1/2 part */ 
+             border-radius: 12px;  /* when you hover the cursor it turn to border radius */
+        }
+       
+        /* Styling for links */
+        .form-footer {
+            font-size: 0.9em;
+        }
+
+        .form-footer a {
+            text-decoration: none;
+            color: black;
+            margin: 0 5px;
+        }
+
+        /* Styling for links on hover */
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+        /* Error message styling */
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            display: none;
+            margin-top: 10px;
+        }
+        

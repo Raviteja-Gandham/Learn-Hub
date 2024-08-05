@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: burlywood;
+        margin: 8vh 0 0 5vw;
+    }
+    body p{
+        font-size: 1.5em;
+    }
+    .box1{
+        background-color: rgb(233, 180, 112);
+        padding: 10px;
+        width: fit-content;
+        font-size: 1.3rem;
+        position: relative;
+    }
+    .box2{
+        background-color: rgb(233, 180, 112);
+        padding: 10px;
+        width: fit-content;
+        font-size: 1.3rem;
+        position: absolute;
+        left: 35vw;
+        top: 40vh;
+    }
+    .btn{
+            height: 5vh;
+            width: 100%;
+            display: flex;
+            justify-content:space-evenly ;
+            position: relative;
+            top: 20vh;
+        }
+        button{
+            background-color: rgb(244, 176, 86);
+            width: 8vw;
+            height: 5vh;
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            color: black;
+        }
+        body a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>CSS Comments : -</u></h1><br>
+    <p>CSS comments are not displayed in the browser, but they can help document your source code.</p><br>
+    <h1>CSS Comments</h1>
+    <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+    <p>Comments are ignored by browsers.</p>
+    <p>A CSS comment is placed inside the &ltstyle&gt element, and starts with /* and ends with */:</p><br>
+    <div class="box1">
+        <pre>
+ Example
+ /* This is a single-line comment */
+ p {
+  color: red;
+ }  
+        </pre>
+    </div>
+    <div class="box2">
+        <pre>
+Example
+/* This is a multiple-line comment 
+p {
+color: red;
+}  */
+      </pre>
+    </div>
+    <br><div class="btn">
+        <button ><a href="typesofcss.html">Previous</a></button>
+        <button ><a href="positioncss.html">Next</a></button>
+      </div>
+
+</body>
+</html>

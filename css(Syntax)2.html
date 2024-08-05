@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body{
+            margin: 8vh 0 0 5vw;
+            background-color: burlywood;
+        }
+        img{
+            width: 600px;
+            height: 250px;
+            position: relative;
+        }
+        .box{
+            background-color: rgb(195, 146, 81);
+            width: 40%;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1.1em;
+        }
+        .box1{
+            position: absolute;
+            background-color: rgb(241, 173, 83);
+            height: max-content;
+            width: fit-content;
+            padding: 15px;
+            top:18vh;
+            left: 50vw;
+            border-radius: 20px;
+            font-size: 1.1em;
+        }
+        .btn{
+            height: 5vh;
+            width: 100%;
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        button{
+            background-color: rgb(244, 176, 86);
+            width: 8vw;
+            height: 5vh;
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            color: black;
+        }
+        body a{
+            text-decoration: none;
+        }
+     </style>
+</head>
+<body>
+    <h1>CSS Syntax</h1>
+    <img src="css.png" alt="Syntaximage"><br>
+    <div class="box">
+    <br><p>The selector points to the HTML element you want to style.</p>
+    <p>The declaration block contains one or more declarations separated by semicolons.</p>
+    <p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+    <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+</div>
+    <div class =box1>
+    <p>Example</p>
+    <p>In this example all <p> elements will be center-aligned, with a red text color:</p>
+    
+    <p>  p { </p>
+        <p>color: red; </p>
+        <p> text-align: center; </p>
+        <p>}</p>
+
+       <p> Example Explained</p>
+       <p> p is a selector in CSS (it points to the HTML element you want to style: &ltp&gt). </p>
+       <p>color is a property, and red is the property value </p>
+       <p>text-align is a property, and center is the property value </p>
+    </div>
+    <br>
+    <div class="btn">
+        <button ><a href="css1.html">Previous</a></button>
+        <button ><a href="selectorcss4.html">Next</a></button>
+      </div>
+</body>
+</html>

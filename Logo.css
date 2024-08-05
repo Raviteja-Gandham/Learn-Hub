@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #212122;
+}
+.btn1{
+    height: 5vh;
+    width: 20vw;
+    font-size: 1.5vw;
+    background-color: rgb(119, 20, 119);
+    box-shadow: inset;
+    transition: ease-out 0.5s;
+}
+.btn1:hover{
+    background-color: rosybrown;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 20vw 0 #676778;  /*to get full part upto button width */
+   /* box-shadow: inset 5vw 0 #676778; /* to get off part (or) 1/2 part */ 
+    border-radius: 12px;  /* when you hover the cursor it turn to border radius */
+}

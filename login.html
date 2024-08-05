@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+   <!-- <script type="text/Javascript" src="login.js"></script> -->
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+  <!--  <div style="display: flex; align-items: center;">
+        <img class="img-logo" src="logo.png" alt="logo" style="margin-right: 10px;">
+        <div>
+            <h1 style="color: rgb(151, 151, 52); display: inline; margin: 0;">Learn Hub</h1> <br>
+            <p style="color: rgb(151, 151, 52); display: inline; margin: 0;"> Let's learn together</p>
+        </div>
+    </div> -->
+    
+   
+    <div class="form-container">
+        
+        <div class="form-header">
+           <u style="color: blue;">Login here </a></u>
+        </div>
+    <!--    <div style="display: flex; align-items: center;">
+            <img class="img-logo" src="logo.png" alt="logo" style="margin-right: 10px;">
+            <div>
+                <h1 style="color: rgb(151, 151, 52); display: inline; margin: 0; align-items: right;">Learn Hub</h1> <br>
+                <p style="color: rgb(151, 151, 52); display: inline; margin: 0; align-items: right;"> Let's learn together</p>
+            </div>
+        </div> -->
+        <div class="error-message" id="errorMessage">Please correct the errors above.</div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="enter name here" minlength="4" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="enter password here" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}"
+                title="Password must be at least 8 characters long, with atleast 1 uppercase letter atleast 1 lowercase letter, atleast 1 number, and atleast 1 special character." required>
+            </div>
+            <button type="submit" class="login-btn">Log in</a></button>
+           <!--<div class="error-message" id="errorMessage">Please correct the errors above.</div>-->
+        
+        </form>
+        <div class="form-footer">
+            <a href="Register.html" target="_blank">Register?</a>  
+            <a href="Forgot_password.html" >Forgot password?</a>
+        </div>
+        <div>-------------------------------------</div>
+        <div class="icons">
+            <p>
+              <span>
+           <!-- <a href="https://accounts.google.co.in/" target="_blank"><img src="C:\Ravi\htmlfiles\FEW_project_2024\google.png" alt="google"></a>-->
+            <a href="https://accounts.google.co.in/" target="_blank"><img src="C:\Ravi\htmlfiles\FEW_project_2024\gmail.png" alt="gmail"></a>
+            <a href="#"><img src="C:\Ravi\htmlfiles\FEW_project_2024\whatsApp.png" alt="whatsApp"></a>
+            </span>
+        </p>
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

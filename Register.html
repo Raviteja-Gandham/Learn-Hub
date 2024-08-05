@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h3 style="color: grey;"><u>Register Here</u></h3>
+        </div>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="enter here" minlength="4" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="enter here" name="password" 
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" 
+                    title="Password must be at least 8 characters long, with at least one uppercase letter, one lowercase letter, one number, and one special character."
+                    required>
+            </div>
+            <!-- <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> -->
+            <button type="submit" class="register-btn">Register</button>
+            <div> already have an account? <a href="login.html" target="_blank">click here </a></div>
+            <div class="message" id="message"></div>
+        </form>
+    </div>
+
+    <script src="Register.js"></script>
+</body>
+</html>

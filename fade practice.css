@@ -1,0 +1,20 @@
+body {
+    overflow: hidden; /* Prevents horizontal scrollbar */
+}
+
+.animated-text {
+    position: relative;
+    left: -100%; /* Start position off-screen */
+    font-size: 24px;
+    font-weight: bold;
+    animation: moveFromLeft 3s forwards; /* 3s animation duration */
+}
+
+@keyframes moveFromLeft {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0%;
+    }
+}

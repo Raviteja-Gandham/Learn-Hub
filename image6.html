@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 5vw;
+            background-color: green;
+        }
+        .image img{
+            width: 250px;
+            height:170px;
+        }
+        body p{
+            font-size: 25px;
+        }
+         li{
+            font-size: 25px;
+        }
+        body .headdesign{
+            background-color: rgb(138, 241, 138);
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        body .spandesign{
+            background-color: rgb(209, 241, 209);
+        }
+        .btn{
+            height: 5vh;
+            width: 100%;
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        button{
+            background-color: rgb(99, 226, 99);;
+            width: 8vw;
+            height: 5vh;
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            color: black;
+        }
+        body a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>HTML Images</u></h1><br>
+    <p>Images can improve the design and the appearance of a web page.</p><br>
+    <div class="image">
+          <img src="flowes.avif" alt="sideroeseimage">
+          <img src="planet.webp" alt="planetiamge">
+          <img src="photo4.webp" alt="natureimage">
+          <img src="natureview.jpg" alt="roboimage">
+          <img src="stones.jpg" alt="stones">
+     </div><br>
+     <h2>HTML Images Syntax:-</h2>
+     <p>The HTML &ltimg&gt tag is used to embed an image in a web page.</p>
+     <p>Images are not technically inserted into a web page; images are linked to web pages. The &ltimg&gt tag creates a holding space for the referenced image.</p>
+     <p>The &ltimg&gt tag is empty, it contains attributes only, and does not have a closing tag.</p>
+     <p>The &ltimg&gt tag has two required attributes:</p>
+     <ul>
+        <li>src - Specifies the path to the image</li>
+        <li>alt - Specifies an alternate text for the image</li>
+     </ul>
+     <p>&ltimg src="url" alt="alternatetext"&gt</p><br>
+     <h1 class="headdesign"><u>The src Attribute</u></h1><br>
+     <p>The required src attribute specifies the path (URL) to the image.</p>
+     <p>
+        Example
+         <span class="spandesign"> &ltimg src="img_chania.jpg" </span>alt="Flowers in Chania"&gt
+     </p><br>
+     <h1 class="headdesign"><u>The alt Attribute</u></h1>
+     <p>The value of the alt attribute should describe the image:</p>
+     <p>
+        Example
+        &ltimg src="img_chania.jpg" <span class= "spandesing" >alt="Flowers in Chania"&gt</span>
+     </p><br>
+     <h1 class="headdesign"><u>Image Size - Width and Height</u></h1>
+     <p>You can use the style attribute to specify the width and height of an image.</p>
+     <p>&ltimg src="img_girl.jpg" alt="Girl in a jacket" <span class="spandesign">style="width:500px;height:600px;" </span>&gt</p><br>
+     <p>you can use the width and height attributes:</p>
+     <p>&ltimg src="img_girl.jpg" alt="Girl in a jacket" <span class="spandesign"> width="500" height="600" </span>&gt</p><br>
+     <h1 class="headdesign"><u>Image as a Link</u></h1><br>
+     <p>image as a link, put the &ltimg&gt tag inside the &lta&gt tag</p>
+     <p>exapmle</p>
+     <p>&lta href="default.asp"&gt<br>
+        &ltimg src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt<br>
+      &lt/a&gt</p><br>
+      <br><div class="btn">
+      <button ><a href="list5.html">Previous</a></button>
+      <button ><a href="Thanku.html">Next</a></button>
+    </div>
+</body>
+</html>

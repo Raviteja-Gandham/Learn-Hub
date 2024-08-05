@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-color: green;
+        margin: 5vw 8vw;
+      }
+      .box1{
+        background-color: rgb(154, 224, 154);
+        height: fit-content;
+        width: 45%;
+        font-size: 1.2em;
+        padding: 20px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        position:relative;
+      }
+      .box2{
+        background-color:rgb(58, 169, 58) ;
+        height: fit-content;
+        width: 45%;
+        font-size: 1.2em;
+        padding: 20px;
+        position: relative;
+
+      }
+      .box3{
+        background-color:rgb(154, 224, 154); ;
+        height: fit-content;
+        width: 45%;
+        font-size: 1.2em;
+        padding: 20px;
+        border-bottom: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        position: relative;
+      }
+      .h{
+        font-size: large;
+      }
+      .box4{
+        background-color: rgb(58, 169, 58) ;
+        position: relative;
+        height: fit-content;
+        width: 35%;
+        left: 90vh;
+        top: -75vh;
+        padding: 20px;
+        border-radius:15px ;
+      }
+      .box5{
+        background-color: rgb(150, 239, 150) ;
+        position: relative;
+        height: fit-content;
+        width: 35%;
+        left: 90vh;
+        top: -74vh;
+        padding: 20px;
+        border-radius: 15px;
+
+      }
+      .box6{
+        background-color: rgb(58, 169, 58) ;
+        position: relative;
+        height: fit-content;
+        width: 35%;
+        left: 90vh;
+        top: -73vh;
+        padding: 20px;
+        border-radius: 15px;
+      }
+      .btn1{
+        background-color: rgb(109, 222, 109);
+        padding: 8px;
+        position: absolute;
+       bottom: 10vh;
+        right: 35vw;
+        border-radius: 10px;
+        border: 1px solid black;
+        height: 5vh;
+        width: 8vw;
+        font-size: 1.2em;
+      }
+      .btn2{
+        background-color: rgb(109, 222, 109);
+        padding: 8px;
+        position: absolute;
+       bottom: 10vh;
+        right: 25vw;
+        border-radius: 10px;
+        border: 1 px solid black;
+        height: 5vh;
+        width: 8vw;
+        font-size: 1.2em;
+      }
+      body a{
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+    <h1>Links in HTML</h1>
+    <div class="box1">
+    <h3><u>Links are Used for?</u></h3><br>
+      <p> HTML links are hyperlinks.</p>
+      <p>You can click on a link and jump to another document.</p>
+      <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+      <p>Note: A link does not have to be text. A link can be an image or any other HTML element!</p>
+    </div>
+     <div class="box2">
+       <h1 class="h"> HTML Links - Syntax</h1>
+            &lt a href="url" &gt link text &lt/a&gt
+     </div>
+     <div class="box3">
+        <h1 class="h">HTML Links - The target Attribute</h1>
+        By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+        The target attribute specifies where to open the linked document.
+        The target attribute can have one of the following values:
+        <p>_self - Default. Opens the document in the same window/tab as it was clicked</p>
+        <p>_blank - Opens the document in a new window or tab</p>
+         <p>_parent - Opens the document in the parent frame</p>
+        <p>_top - Opens the document in the full body of the window</p>
+     </div>
+     <div class="box4"> 
+        <h1 class="h">HTML Links - Use an Image as a Link</h1>
+        <p>To use an image as a link, just put the &ltimg&gt tag inside the &lta&gt tag:</p>
+        <p>&lt a href="default.asp" &gt </p>
+           <p> &lt img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;" &gt
+            & lt /a& gt
+            </p>
+     </div>
+     <div class="box5">
+        <h1 class="h">Link to an Email Address</h1>
+        <p>Use mailto: inside the href attribute to create a link that opens the user's email program (to let them send a new email)</p>
+        <p>&lta href="mailto:someone@example.com" &gt Send email &lt / a&gt </p>
+     </div>
+     <div class ="box6">
+        <h1 class="h">Button as a Link</h1>
+        <p>use an HTML button as a link, you have to add some JavaScript code.</p>
+        <p> JavaScript allows you to specify what happens at certain events, such as a click of a button</p>
+        <p>&lt button onclick="document.location='default.asp'" &gt HTML Tutorial &lt /button &gt </p>
+     </div>
+     <button class="btn1"><a href ="comment3.html">Previous</a></button>
+     <button class="btn2"><a href = "list5.html">Next</a></button>
+</body>
+</html>

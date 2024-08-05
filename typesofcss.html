@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: burlywood;
+            margin: 10vh 0 0 8vw;
+        }
+        body .d{
+            font-size: 1.3rem;
+        }
+        .box1{
+            background-color: rgb(237, 165, 72);
+            width: 80%;
+            height: fit-content;
+            padding: 15px;
+            font-size: 1.2rem;
+            border-radius: 20px;
+        }
+        .innerbox{
+            background-color: rgb(246, 223, 193);
+            width: fit-content;
+        }
+        .box2{
+            background-color: rgb(237, 165, 72);
+            width: 80%;
+            height: fit-content;
+            padding: 15px;
+            font-size: 1.2rem;
+            border-radius: 20px;
+        }
+        .box3{
+            background-color: rgb(237, 165, 72);
+            width: 80%;
+            height: fit-content;
+            padding: 15px;
+            font-size: 1.2rem;
+            border-radius: 20px;
+        }
+        .btn{
+            height: 5vh;
+            width: 100%;
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        button{
+            background-color: rgb(237, 165, 72);
+            width: 8vw;
+            height: 5vh;
+            padding: 5px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            color: black;
+        }
+        body a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>How To Add CSS</u></h1><br>
+    <h2>Three Ways to Insert CSS</h2>
+    <p>There are three ways of inserting a style sheet:</p>
+    <ul class="d">
+        <li>External CSS</li>
+        <li>Internal CSS</li>
+        <li>Inline CSS</li><br>
+    </ul>
+    <div class="box1">
+    <h2>External CSS </h2>
+    <p> External style sheet, you can change the look of an entire website by changing just one file!</p>
+    <p>Each HTML page must include a reference to the external style sheet file inside the &ltlink&gt element, inside the head section.</p>
+    <p>The external .css file should not contain any HTML tags.</p>
+    <p><b>Example</b></p>
+    <p>External styles are defined within the <link> element, inside the <head> section of an HTML page:</p>
+        <div class="innerbox">
+        <pre>
+            &lt!DOCTYPE html&gt
+            &lthtml&gt
+            &lthead&gt
+            &ltlink rel="stylesheet" href="mystyle.css"&gt
+            &lt/head&gt
+            &ltbody&gt
+            &lth1>This is a heading. &lt/h1&gt
+            &ltp>This is a paragraph. &lt/p&gt
+            &lt/body&gt
+            &lt/html&gt
+        </pre>
+    </div>
+    </div><br>
+    <div class="box2">
+        <h2>Internal CSS</h2>
+        <p>An internal style sheet may be used if one single HTML page has a unique style.</p>
+        <p>The internal style is defined inside the &ltstyle&gt element, inside the head section.</p>
+        <p> The style attribute can contain any CSS property.</p>
+        <p><b>Example</b></p>
+        <p>Inline styles are defined within the "style" attribute of the relevant element:</p>
+        <div class="innerbox">
+            <pre>
+            &lt!DOCTYPE html&gt
+            &lthtml&gt
+            &ltbody&gt
+            &lth1 style="color:blue;text-align:center;">This is a heading&lt/h1&gt
+            &ltp style="color:red;">This is a paragraph.&lt/p&gt
+            &lt/body&gt
+            &lt/html&gt
+            </pre>
+        </div>
+    </div><br>
+    <div class="box3">
+        <h2>Inline CSS</h2>
+        <p>An inline style may be used to apply a unique style for a single element.</p>
+        <p>Inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</p>
+        <p><b>Example</b></p>
+        <p>Inline styles are defined within the "style" attribute of the relevant element:</p>
+        <div class="innerbox">
+            <pre>
+                &lt!DOCTYPE html&gt
+                &lthtml&gt
+                &ltbody&gt
+                &lth1 style="color:blue;text-align:center;">This is a heading &lt/h1&gt
+                &ltp style="color:red;">This is a paragraph. &lt/p&gt
+                &lt/body&gt
+                &lt/html&gt
+            </pre>
+        </div>
+    </div>
+    <br><div class="btn">
+        <button ><a href="selectorcss4.html">Previous</a></button>
+        <button ><a href="commentsCss3.html">Next</a></button>
+      </div>
+</body>
+</html>
